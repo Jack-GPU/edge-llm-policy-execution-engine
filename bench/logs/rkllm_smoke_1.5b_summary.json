@@ -1,0 +1,13 @@
+{
+  "model": "/root/control_agent/models/Qwen2.5-1.5B-Instruct-rk3588-w8a8-opt-0-hybrid-ratio-0.0.rkllm",
+  "load_ms": 2292.72,
+  "ttft_ms": 199.25,
+  "e2e_ms": 1936.61,
+  "tokens": 20,
+  "tok_s": 10.936,
+  "rss_after_load_kb": 1699092,
+  "rss_end_kb": 1700916,
+  "runtime": "1.2.1",
+  "model_name": "Qwen2.5-1.5B-Instruct-w8a8-opt0",
+  "board": "orangepi5"
+}

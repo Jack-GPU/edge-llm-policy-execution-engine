@@ -1,0 +1,35 @@
+# 安全与执行策略（第一版偏严）
+model:
+  primary: qwen2.5-1.5b
+  baseline: qwen2.5-0.5b
+  max_new_tokens: 128
+  temperature: 0.1
+
+policy:
+  # 参数越界：拒答（不做静默 clamp，便于讲「可验证」）
+  out_of_range: reject
+  # schema 失败后允许的自动重试次数（仅 JSON 修复提示）
+  json_repair_retries: 1
+  # 低于该置信度视为 need_clarification
+  min_confidence: 0.55
+  # 高危 op 必须二次确认
+  require_confirm:
+    - mute_alarms
+    - reboot_stream
+  confirm_phrase: "确认执行"
+  # 绝对禁止出现在模型输出里的子串（命中则 inject_attempt）
+  deny_substrings:
+    - /bin/
+    - rm -rf
+    - sudo
+    - ssh
+    - curl
+    - wget
+    - python -c
+    - os.system
+
+device:
+  cameras: [0, 1, 2, 3]
+  mute_max_seconds: 300
+  default_threshold: 0.5
+  default_alarm_channel: log

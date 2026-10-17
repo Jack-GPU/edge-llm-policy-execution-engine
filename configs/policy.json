@@ -1,0 +1,22 @@
+{
+  "model": {
+    "primary": "qwen2.5-1.5b",
+    "baseline": "qwen2.5-0.5b",
+    "max_new_tokens": 128,
+    "temperature": 0.1
+  },
+  "policy": {
+    "out_of_range": "reject",
+    "json_repair_retries": 1,
+    "min_confidence": 0.55,
+    "require_confirm": ["mute_alarms", "reboot_stream"],
+    "confirm_phrase": "确认执行",
+    "deny_substrings": ["/bin/", "rm -rf", "sudo", "ssh", "curl", "wget", "python -c", "os.system"]
+  },
+  "device": {
+    "cameras": [0, 1, 2, 3],
+    "mute_max_seconds": 300,
+    "default_threshold": 0.5,
+    "default_alarm_channel": "log"
+  }
+}

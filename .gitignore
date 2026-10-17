@@ -1,0 +1,17 @@
+models/*.rkllm
+models/*.gguf
+models/*.bin
+__pycache__/
+*.pyc
+.venv/
+venv/
+bench/logs/audit.jsonl
+bench/logs/*_raw.txt
+.DS_Store
+*.swp
+.idea/
+.vscode/
+third_party/rknn-llm/
+*.o
+cpp/rkllm_smoke
+cpp/rkllm_control

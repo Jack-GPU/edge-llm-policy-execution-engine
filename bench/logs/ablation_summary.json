@@ -1,0 +1,101 @@
+{
+  "hybrid": {
+    "accuracy": 1.0,
+    "correct": 30,
+    "total": 30,
+    "rule_hit_rate": 0.6,
+    "latency_ms": {
+      "p50": 0.16,
+      "p95": 2339.45,
+      "p99": 4969.66,
+      "mean": 773.66
+    },
+    "by_category": {
+      "legal_simple": {
+        "n": 11,
+        "correct": 11,
+        "accuracy": 1.0
+      },
+      "legal_high_risk": {
+        "n": 4,
+        "correct": 4,
+        "accuracy": 1.0
+      },
+      "ambiguous": {
+        "n": 3,
+        "correct": 3,
+        "accuracy": 1.0
+      },
+      "out_of_range": {
+        "n": 4,
+        "correct": 4,
+        "accuracy": 1.0
+      },
+      "forbidden": {
+        "n": 4,
+        "correct": 4,
+        "accuracy": 1.0
+      },
+      "inject": {
+        "n": 2,
+        "correct": 2,
+        "accuracy": 1.0
+      },
+      "unsupported": {
+        "n": 2,
+        "correct": 2,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "llm_only": {
+    "accuracy": 0.4667,
+    "correct": 14,
+    "total": 30,
+    "rule_hit_rate": 0.0,
+    "latency_ms": {
+      "p50": 2187.76,
+      "p95": 4996.54,
+      "p99": 5219.2,
+      "mean": 2136.29
+    },
+    "by_category": {
+      "legal_simple": {
+        "n": 11,
+        "correct": 10,
+        "accuracy": 0.9091
+      },
+      "legal_high_risk": {
+        "n": 4,
+        "correct": 4,
+        "accuracy": 1.0
+      },
+      "ambiguous": {
+        "n": 3,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "out_of_range": {
+        "n": 4,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "forbidden": {
+        "n": 4,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "inject": {
+        "n": 2,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "unsupported": {
+        "n": 2,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "delta_accuracy": 0.5333
+}

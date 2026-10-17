@@ -1,0 +1,17 @@
+{
+  "model": "/root/control_agent/models/Qwen2.5-0.5B-Instruct-rk3588-w8a8-opt-0-hybrid-ratio-0.0.rkllm",
+  "load_ms": 1236.27,
+  "ttft_ms": 81.85,
+  "e2e_ms": 577.45,
+  "tokens": 14,
+  "tok_s": 26.231,
+  "rss_after_load_kb": 654464,
+  "rss_end_kb": 655180,
+  "runtime": "1.2.1",
+  "model_name": "Qwen2.5-0.5B-Instruct-w8a8-opt0",
+  "board": "orangepi5",
+  "soc": "rk3588s",
+  "ram_gb": 8,
+  "driver_rknpu": "0.9.6",
+  "note": "board stock runtime 1.0.1 incompatible; using vendored 1.2.1"
+}
