@@ -25,7 +25,7 @@ def main() -> None:
         MockDevice(),
         AuditLog(audit_path),
     )
-    print("端侧可验证控制 Agent（FakeLLM）")
+    print("端侧 LLM 策略执行引擎（FakeLLM）")
     print("输入自然语言；高危操作需回复：确认执行；Ctrl+C 退出\n")
     while True:
         try:
